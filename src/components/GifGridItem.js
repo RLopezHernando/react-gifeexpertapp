@@ -10,3 +10,13 @@ export const GifGridItem = ({ title, url }) => {
         </div>
     )
 }
+
+//Pruebas con Enzyme
+// 1. Configurar Enzime
+// 2. Configurar Enzime to JSON
+// 3. Mostar el componente correctamente
+//  *shallow
+//  *wrapper
+//  *wrapper.toMatchSnapshot()
+
+

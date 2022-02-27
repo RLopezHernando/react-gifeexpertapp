@@ -1,0 +1,27 @@
+Enzime es una libreria para realizar pruebas con React
+
+Configuracion
+
+Importante - Como no esta enzime para la actualizacion 17 para enzime hay que hacer unas
+configuraciones extras
+
+En nuestro caso nuestra version es : "^17.0.2"
+
+1. Entramos en https://github.com/wojtekmaj/enzyme-adapter-react-17
+2. Instalamos version beta de Enzime para React 17 
+    npm install --save-dev @wojtekmaj/enzyme-adapter-react-17
+3. Pegamos en setupTest.js las siguientes lineas
+    import Enzyme from 'enzyme';
+    import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
+    Enzyme.configure({ adapter: new Adapter() });
+4. Sera necesario instalar "enzime to json"
+    npm install --save-dev enzyme-to-json
+5. Configurar en el setupTest.js el "enzime to json"
+    import {createSerializer} from 'enzyme-to-json';
+    expect.addSnapshotSerializer(createSerializer({mode: 'deep'}));
+
+Correr las pruebas
+Importante - Habra que instalar enzyme aparte con el comando "npm i enzyme"
+Las pruebas van sobre la carpeta tests
+La forma en la que funcionan las pruebas viene detallada en el git de enzyme
+Comando "npm run test"
