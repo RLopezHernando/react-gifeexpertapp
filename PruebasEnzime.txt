@@ -25,3 +25,11 @@ Importante - Habra que instalar enzyme aparte con el comando "npm i enzyme"
 Las pruebas van sobre la carpeta tests
 La forma en la que funcionan las pruebas viene detallada en el git de enzyme
 Comando "npm run test"
+
+Carpeta __snapshots__
+Esta es una carpeta que genera "enzyme to json" sirve para comparar nuestro archivo
+original con un snapshot inicial que se crea de la prueba. Al coincidir el archivo
+original con el snapshot pasaria la prueba
+Importante a veces nos da fallo porque realizamos cambios y necesitamos actualizar el snapshot
+para ello deberiamos darle a la tecla u (update) cuando estamos corriendo el test con
+npm run test
