@@ -33,3 +33,8 @@ original con el snapshot pasaria la prueba
 Importante a veces nos da fallo porque realizamos cambios y necesitamos actualizar el snapshot
 para ello deberiamos darle a la tecla u (update) cuando estamos corriendo el test con
 npm run test
+
+Libreria para hacer pruebas con hooks
+
+https://react-hooks-testing-library.com/
+npm install --save-dev @testing-library/react-hooks
